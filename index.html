@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <meta charset="UTF-8">
     <title>Meeting Minutes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
+
   <body>
+
     <table style="width: 60%; height: 100px; border: 1px solid black">
       <tr>
         <td style="border: 1px solid black">
@@ -12,13 +17,13 @@
         <td>
           <table style="width: 100%; border: 1px solid" >
             <tr>
-              <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black ">Date:</td>
+              <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black "> <span>Date:</span></td>
             </tr>
             <tr>
-              <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black">Time:</td>
+              <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black"><span>Time:</span></td>
             </tr>
             <tr>
-              <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black">Location:</td>
+              <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black"><span>Location:</span></td>
             </tr>
           </table>
         </td>
@@ -26,7 +31,20 @@
     </table>
     
     <br>
+
+    <hr style="width: 60%; margin-left: 0;"/>
+    <nav>
+      <a href="#agenda">Agenda</a> |
+      <a href="#attendees">Attendees</a> |
+      <a href="#to-Do">To-Do</a> |
+      <a href="#notes">Notes</a> | 
+      <a href="#diagrams">Diagrams</a> 
+    </nav>
+    <hr style="width: 60%; margin-left: 0;"/>
       
+    
+
+    <br>
     <table style="width: 60%; border: 1px solid black">
       <tr>
         <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">Meeting Title: </td>
@@ -34,33 +52,35 @@
     </table>
     
     <br>
-
-    <table style="width: 60%; border: 1px solid" >
-        <tr>
-          <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 50%; border: 1px solid black" >Agenda</td>
-          <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 50%; border: 1px solid black" >Attendees</td>
+    <section>
+      <table style="width: 60%; border: 1px solid" >
+          <tr>
+            <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 50%; border: 1px solid black"  id="agenda">Agenda</td>
+            <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 50%; border: 1px solid black" id="attendees">Attendees</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black">1.</td>
+            <td style="border: 1px solid black"></td>
         </tr>
         <tr>
-          <td style="border: 1px solid black">1.</td>
+          <td style="border: 1px solid black">2.</td>
           <td style="border: 1px solid black"></td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black">2.</td>
-        <td style="border: 1px solid black"></td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black">3.</td>
-        <td style="border: 1px solid black"></td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black">4.</td>
-        <td style="border: 1px solid black"></td>
-      </tr>
-    </table>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black">3.</td>
+          <td style="border: 1px solid black"></td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black">4.</td>
+          <td style="border: 1px solid black"></td>
+        </tr>
+      </table>
+    </section>
   <br>
+    <main>
       <table style="width: 60%; border: 1px solid">
         <tr>
-          <td colspan="4"  style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black">To-Do</td>
+          <td colspan="4"  style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black" id="to-Do">To-Do</td>
         </tr>
         <tr>
           <td style="text-align: left; padding-left: 4px; padding-top: 10px; padding-bottom: 10px; width: 2%; border: 1px solid black">#</td>
@@ -99,13 +119,14 @@
             <td style="border: 1px solid black"></td>
           </tr>
       </table>
+    </main>
       <br>
 
 
   <table style="width: 60%; height: 230px; border: 1px solid" >
 
     <tr>
-      <td style="text-align: left; vertical-align: top; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; height: 5%">Notes</td>
+      <td style="text-align: left; vertical-align: top; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; height: 5%" id="notes">Notes</td>
     </tr>
     <tr>
       <td>
@@ -118,7 +139,7 @@
   <table style="width: 60%; height: 210px; border: 1px solid">
 
     <tr>
-      <td style="text-align: left; vertical-align: top; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">Diagrams</td>
+      <td style="text-align: left; vertical-align: top; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;" id="diagrams">Diagrams</td>
     </tr> 
     <tr>
         <td style="text-align: center; vertical-align: middle; border: 1px solid black">
@@ -154,9 +175,11 @@
       </td>
     </tr>
   </table>
-
-  
   <br>
+  <hr style="width: 60%; margin-left: 0;"/>
+  <footer>
+    <p>Copyright © 2025 All Rights Reserved.</p>
+  </footer>
   </body>
 
 </html>
