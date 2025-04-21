@@ -1,4 +1,4 @@
-# 🌞 Daily Standup – 04-21-2025
+# 🌞 Daily Standup  04-21-2025
 
 ## 🕒 Yesterday's Progress
 ### Worked on styling meeting minutes
