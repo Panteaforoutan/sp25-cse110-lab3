@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - Starter
 
-https://panteaforoutan.github.io/Lab2_Starter/
+https://panteaforoutan.github.io/sp25-cse110-lab3/
