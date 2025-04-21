@@ -5,32 +5,33 @@
   <meta charset="UTF-8">
   <title>Meeting Minutes</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-  <table style="width: 60%; height: 100px; border: 1px solid black">
+  <table class="header" style="width: 60%; height: 100px; border: 1px solid rgb(0, 0, 0);">
     <tr>
-      <td style="border: 1px solid black">
+      <td style="border: 1px solid #000">
         <h1 style="text-align: center;">Meeting Minutes</h1>
       </td>
       <td>
         <table style="width: 100%; border: 1px solid">
           <tr>
             <td
-              style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black ">
+              style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; margin: 5px 5px 5px 5px; border: 1px solid hsla(0, 0%, 0%, 0.9);">
               <span>Date: </span>
             </td>
           </tr>
           <tr>
             <td
-              style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black">
+              style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; margin: 5px 5px 5px 5px; border: 1px solid rgba(0, 0, 0, 0.9);">
               <span>Time:</span>
             </td>
           </tr>
           <tr>
             <td
-              style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black">
+              style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; margin: 5px 5px 5px 5px; border: 1px solid black">
               <span>Location:</span>
             </td>
           </tr>
@@ -39,30 +40,21 @@
     </tr>
   </table>
 
-  <br>
-
-  <hr style="width: 60%; margin-left: 0;" />
-  <nav>
+  <hr class="lines" style="width: 60%; margin-left: 0;" />
+  <nav class="nav">
     <a href="#agenda">Agenda</a> |
     <a href="#attendees">Attendees</a> |
-    <a href="#to-Do">To-Do</a> |
+    <a href="#to-do">To-Do</a> |
     <a href="#notes">Notes</a> |
     <a href="#diagrams">Diagrams</a>
   </nav>
-  <hr style="width: 60%; margin-left: 0;" />
+  <hr class="lines" style="width: 60%; margin-left: 0;" />
+
+  <div class="title"">Meeting Title:</div>
 
 
-
-  <br>
-  <table style="width: 60%; border: 1px solid black">
-    <tr>
-      <td style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">Meeting Title: </td>
-    </tr>
-  </table>
-
-  <br>
-  <section>
-    <table style="width: 60%; border: 1px solid">
+  <section class="table1">
+    <table style="width: 100%; border: 1px solid">
       <tr>
         <td
           style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 50%; border: 1px solid black"
@@ -90,13 +82,10 @@
     </table>
   </section>
   <br>
-  <main>
-    <table style="width: 60%; border: 1px solid">
-      <tr>
-        <td colspan="4"
-          style="text-align: left; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; border: 1px solid black"
-          id="to-Do">To-Do</td>
-      </tr>
+  
+  <h2>To-do</h2>
+  <main class="table1">
+    <table style="width: 100%; border: 1px solid">
       <tr>
         <td
           style="text-align: left; padding-left: 4px; padding-top: 10px; padding-bottom: 10px; width: 2%; border: 1px solid black">
@@ -146,45 +135,19 @@
   <br>
 
 
-  <table style="width: 60%; height: 230px; border: 1px solid">
-
-    <tr>
-      <td
-        style="text-align: left; vertical-align: top; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; height: 5%"
-        id="notes">Notes</td>
-    </tr>
-    <tr>
-      <td style="text-align: left; border: 1px solid black;">
-        <ol>
-          <li>
-            <p>Project Status Updates</p>
-            <ul>
-              <li>Frontend development is <em>80% complete</em>. Remaining components: <strong>login modal</strong>
-                and
-                <strong>dashboard</strong>.
-              </li>
-              <li>Backend team completed API for <i>user authentication</i>.</li>
-            </ul>
-          </li>
-
-          <li>
-            <p>Upcoming Deadlines</p>
-            <ul>
-              <li>All team members to complete assigned tasks by <b>April 20</b>.</li>
-              <li>Beta release scheduled for <b>April 25</b>.</li>
-            </ul>
-          </li>
-        </ol>
-      </td>
-    </tr>
-  </table>
+  <section class="notes-section" id="notes">
+    <h2>Notes</h2>
+    <div class="notes-box">
+      <p>• Project kickoff planned for next Monday.</p>
+      <p>• Client feedback due by end of week.</p>
+      <p>• Reminder to update GitHub repository.</p>
+    </div>
+  </section>
+  
   <br>
-  <table style="width: 60%; height: 210px; border: 1px solid">
+  <table class="box" style="width: 60%; height: 210px; border: 1px solid">
 
-    <tr>
-      <td style="text-align: left; vertical-align: top; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"
-        id="diagrams">Diagrams</td>
-    </tr>
+    <h2 id="diagrams">Diagrams</h2>
     <tr>
       <td style="text-align: center; vertical-align: middle; border: 1px solid black">
 
@@ -194,7 +157,7 @@
     </tr>
   </table>
   <br>
-  <table style="width: 60%; height: 250px; border: 1px solid">
+  <table class="box" style="width: 60%; height: 250px; border: 1px solid">
     <tr>
       <td style="text-align: center; vertical-align: top; border: 1px solid black">
         <details>
