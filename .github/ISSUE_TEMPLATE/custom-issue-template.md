@@ -1,7 +1,6 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: ''
+name: Standup Notes
+about: Create a standup notes template in a Markdown file standup.md
 labels: enhancement
 assignees: Panteaforoutan
 
